@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_200">#fcf16e</color>
+    <color name="main_500">#ffe600</color>
+    <color name="main_700">#ffd400</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="background">#FFFAFAFA</color>
+
+    <color name="tfe_color_primary">#ffa800</color>
+    <color name="tfe_color_primary_dark">#ff6f00</color>
+    <color name="tfe_color_accent">#425066</color>
+
+    <color name="tfe_semi_transparent">#66000000</color>
+
+    <color name="control_background">#cc4285f4</color>
+    <color name="selection_highlight">#aaaaaa</color>
+    <color name="selection_focus">#eeaa55</color>
+    <color name="item_normal">#eeeeee</color>
+</resources>
