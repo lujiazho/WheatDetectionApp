@@ -1,5 +1,5 @@
 # WheatDetectionApp
-此app有很多不完善的地方，仅作交流使用
+此app有很多不完善的地方，仅作交流使用；安装方法见guide.docx文件
 
 实时检测效果
 
