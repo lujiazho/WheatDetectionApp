@@ -1,0 +1,4 @@
+#Wed Apr 21 20:32:52 CST 2021
+base.0=C\:\\Users\\ASUS\\Desktop\\stop-daydreaming-paddy-doctor-android-master\\paddy-doctor-android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

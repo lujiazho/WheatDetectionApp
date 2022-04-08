@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xyqlx.paddydoctor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="29" />
+    <!-- 如果不必需相机也能使用，请将required设置为false，并在使用时检查hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY) -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 添加网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PaddyDoctor" >
+        <activity
+            android:name="com.xyqlx.paddydoctor.ui.profile.ProfileActivity"
+            android:label="@string/title_activity_profile" />
+        <activity
+            android:name="com.xyqlx.paddydoctor.ui.history.HistoryActivity"
+            android:label="@string/title_activity_history" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.xyqlx.paddydoctor.DetectorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xyqlx.paddydoctor.BottomNavigationActivity"
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity android:name="com.xyqlx.paddydoctor.PhotoActivity" />
+        <activity
+            android:name="com.xyqlx.paddydoctor.ui.login.LoginActivity"
+            android:label="@string/app_name" >
+
+            <!-- 标明了启动页所处的activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xyqlx.paddydoctor.MainActivity" />
+    </application>
+
+</manifest>

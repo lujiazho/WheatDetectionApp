@@ -1,0 +1,137 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.xyqlx.paddydoctor"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml
+10    <!-- 如果不必需相机也能使用，请将required设置为false，并在使用时检查hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY) -->
+11    <uses-feature
+11-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:5:5-7:35
+12        android:name="android.hardware.camera"
+12-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:6:9-47
+13        android:required="true" />
+13-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:7:9-32
+14    <uses-feature android:name="android.hardware.camera.autofocus" />
+14-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:8:5-70
+14-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:8:19-67
+15
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:10:5-80
+16-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:10:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:11:5-81
+17-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:11:22-78
+18    <!-- 添加网络权限 -->
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:13:5-67
+19-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:13:22-64
+20    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+20-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:14:5-80
+20-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:14:22-78
+21    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+21-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:15:5-79
+21-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:15:22-76
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:17:5-65
+22-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:17:22-62
+23
+24    <application
+24-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:19:5-62:19
+25        android:allowBackup="true"
+25-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:20:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\94c02a45137396fcb82f1727450636c6\core-1.3.1\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:21:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:22:9-41
+31        android:networkSecurityConfig="@xml/network_config"
+31-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:23:9-60
+32        android:requestLegacyExternalStorage="true"
+32-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:24:9-52
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:25:9-54
+34        android:supportsRtl="true"
+34-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:26:9-35
+35        android:testOnly="true"
+36        android:theme="@style/Theme.PaddyDoctor" >
+36-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:27:9-49
+37        <activity
+37-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:28:9-29:61
+38            android:name="com.xyqlx.paddydoctor.ui.profile.ProfileActivity"
+38-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:28:19-61
+39            android:label="@string/title_activity_profile" />
+39-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:29:13-59
+40        <activity
+40-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:30:9-32:62
+41            android:name="com.xyqlx.paddydoctor.ui.history.HistoryActivity"
+41-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:31:13-55
+42            android:label="@string/title_activity_history" />
+42-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:32:13-59
+43
+44        <provider
+44-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:34:9-42:20
+45            android:name="androidx.core.content.FileProvider"
+45-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:35:13-62
+46            android:authorities="com.example.android.fileprovider"
+46-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:36:13-67
+47            android:exported="false"
+47-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:37:13-37
+48            android:grantUriPermissions="true" >
+48-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:38:13-47
+49            <meta-data
+49-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:39:13-41:54
+50                android:name="android.support.FILE_PROVIDER_PATHS"
+50-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:40:17-67
+51                android:resource="@xml/file_paths" />
+51-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:41:17-51
+52        </provider>
+53
+54        <activity
+54-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:43:9-46:20
+55            android:name="com.xyqlx.paddydoctor.DetectorActivity"
+55-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:44:13-45
+56            android:screenOrientation="portrait" >
+56-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:45:13-49
+57        </activity>
+58        <activity
+58-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:47:9-49:72
+59            android:name="com.xyqlx.paddydoctor.BottomNavigationActivity"
+59-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:48:13-53
+60            android:label="@string/title_activity_bottom_navigation" />
+60-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:49:13-69
+61        <activity android:name="com.xyqlx.paddydoctor.PhotoActivity" />
+61-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:50:9-51
+61-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:50:19-48
+62        <activity
+62-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:51:9-60:20
+63            android:name="com.xyqlx.paddydoctor.ui.login.LoginActivity"
+63-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:52:13-51
+64            android:label="@string/app_name" >
+64-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:53:13-45
+65
+66            <!-- 标明了启动页所处的activity -->
+67            <intent-filter>
+67-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:56:13-59:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:57:17-69
+68-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:57:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:58:17-77
+70-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:58:27-74
+71            </intent-filter>
+72        </activity>
+73        <activity android:name="com.xyqlx.paddydoctor.MainActivity" />
+73-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:61:9-50
+73-->C:\Users\ASUS\Desktop\paddy-doctor-android\app\src\main\AndroidManifest.xml:61:19-47
+74    </application>
+75
+76</manifest>
